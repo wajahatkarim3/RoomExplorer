@@ -1,6 +1,39 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+ext {
+    /*
+    PUBLISH_GROUP_ID = 'com.wajahatkarim3.EasyFlipView'
+    PUBLISH_ARTIFACT_ID = 'EasyFlipView'
+    PUBLISH_VERSION = '2.0.0'
+    */
+
+    bintrayRepo = "RoomExplorer"
+    bintrayName = "com.wajahatkarim3.RoomExplorer"
+
+    publishedGroupId = 'com.wajahatkarim3.RoomExplorer'
+    libraryName = 'roomexplorer'
+    artifact = 'RoomExplorer'
+
+    libraryDescription = '\n' +
+            'A quick and easy in-app database viewer and manager library for your Room databases.'
+
+    siteUrl = 'https://github.com/wajahatkarim3/RoomExplorer'
+    gitUrl = 'https://github.com/wajahatkarim3/RoomExplorer.git'
+
+    libraryVersion = '0.1.1'
+
+    developerId = 'wajahatkarim3'
+    developerName = 'Wajahat Karim'
+    developerEmail = 'wajahatkarim3@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 29
@@ -31,4 +64,11 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "androidx.room:room-runtime:$room_version"
+}
+
+//Add these lines to publish library to bintray. This is the readymade scripts made to make uploading to bintray easy.
+//Place it at the end of the file
+if (project.rootProject.file('local.properties').exists()) {
+    apply from: 'https://raw.githubusercontent.com/wajahatkarim3/JCenter-Gradle-Scripts/master/install.gradle'
+    apply from: 'https://raw.githubusercontent.com/wajahatkarim3/JCenter-Gradle-Scripts/master/bintray.gradle'
 }
