@@ -34,15 +34,6 @@ Changes exist in the [releases](https://github.com/wajahatkarim3/RoomExplorer_De
 
 💻 Installation
 ============
-In your top level root `build.gradle` file, in the `repositories` section, add the below line as shown:
-```groovy
-allprojects {
-  repositories {
-    maven { url 'https://dl.bintray.com/wajahatkarim3/RoomExplorer' }      // Add this line
-  }
-}
-```
-
 Add this in your app's `build.gradle` file:
 ```groovy
 dependencies {
