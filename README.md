@@ -12,7 +12,7 @@ A quick and easy database viewer and manager library for your Room databases.
 </div>
 <br/>
 
-<div align="center">
+<div>
   <img src="https://github.com/wajahatkarim3/RoomExplorer/blob/master/Art/RoomExplorer_Demo.gif" width="280px" />
 </div>
 
