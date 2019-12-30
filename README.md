@@ -61,7 +61,8 @@ Or add EasyFlipView as a new dependency inside your pom.xml
 </dependency>
 ```
 
-❔ How to Use
+# ❔ How to Use
+
 To view your Room databases in Room Explorer, just call this line and pass your database class and database name in the `show()` method.
 
 ```kotlin
