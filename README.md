@@ -57,7 +57,7 @@ Or add EasyFlipView as a new dependency inside your pom.xml
 To view your Room databases in Room Explorer, just call this line and pass your database class and database name in the `show()` method.
 
 ```kotlin
-   RoomExplorer.show(MainActivit.this, MyRoomDB::class.java, "MyRoomDBName")
+   RoomExplorer.show(context, MyRoomDB::class.java, "MyRoomDBName")
 ```
 
 👨 Developed By
