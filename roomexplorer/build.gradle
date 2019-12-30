@@ -5,26 +5,20 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
-    /*
-    PUBLISH_GROUP_ID = 'com.wajahatkarim3.EasyFlipView'
-    PUBLISH_ARTIFACT_ID = 'EasyFlipView'
-    PUBLISH_VERSION = '2.0.0'
-    */
 
     bintrayRepo = "RoomExplorer"
     bintrayName = "com.wajahatkarim3.RoomExplorer"
 
-    publishedGroupId = 'com.wajahatkarim3.RoomExplorer'
+    publishedGroupId = 'com.wajahatkarim3'
     libraryName = 'roomexplorer'
-    artifact = 'RoomExplorer'
+    artifact = 'roomexplorer'
 
-    libraryDescription = '\n' +
-            'A quick and easy in-app database viewer and manager library for your Room databases.'
+    libraryDescription = 'A quick and easy in-app database viewer and manager library for your Room databases.'
 
     siteUrl = 'https://github.com/wajahatkarim3/RoomExplorer'
     gitUrl = 'https://github.com/wajahatkarim3/RoomExplorer.git'
 
-    libraryVersion = '0.1.1'
+    libraryVersion = '0.0.2'
 
     developerId = 'wajahatkarim3'
     developerName = 'Wajahat Karim'
