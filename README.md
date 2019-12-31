@@ -41,7 +41,7 @@ Changes exist in the [releases](https://github.com/wajahatkarim3/RoomExplorer_De
 Add this in your app's `build.gradle` file:
 ```groovy
 dependencies {
-  implementation 'com.wajahatkarim3:RoomExplorer:0.0.2'
+  implementation 'com.wajahatkarim3.roomexplorer:RoomExplorer:0.0.2'
 }
 ```
 
