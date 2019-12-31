@@ -1,3 +1,7 @@
+<div align="left"><p><a href="https://android.jlelse.eu/easyflipviewpager-the-flip-animations-for-your-viewpager-fd66b34f4703"><img alt="Detail article about RoomExplorer" align="center" src="https://img.shields.io/badge/%F0%9F%93%84%20-NEW-red.svg" /></a>&nbsp;
+The article on why and how this library was created is now published. You can <a href="https://android.jlelse.eu/exploring-android-room-database-with-room-explorer-4d760fdea9de">read it on this link here. →</a>.
+</p></div>
+
 # 🔎 RoomExplorer
 A quick and easy database viewer and manager library for your Room databases. 
 
