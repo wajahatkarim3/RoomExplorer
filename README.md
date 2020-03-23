@@ -5,7 +5,7 @@ The article on why and how this library was created is now published. You can <a
 # 🔎 RoomExplorer
 A quick and easy database viewer and manager library for your Room databases. 
 
-![](https://build.appcenter.ms/v0.1/apps/1c7223d7-8548-49c4-b5b0-e1363e9f39aa/branches/master/badge) [![Download](https://api.bintray.com/packages/wajahatkarim3/RoomExplorer/com.wajahatkarim3.RoomExplorer/images/download.svg) ](https://bintray.com/wajahatkarim3/RoomExplorer/com.wajahatkarim3.RoomExplorer/_latestVersion) [![API](https://img.shields.io/badge/API-15%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=15) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/wajahatkarim3) [![](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat)](https://www.paypal.me/WajahatKarim/5)
+![](https://androidweekly.net/issues/issue-406/badge) [![Download](https://api.bintray.com/packages/wajahatkarim3/RoomExplorer/com.wajahatkarim3.RoomExplorer/images/download.svg) ](https://bintray.com/wajahatkarim3/RoomExplorer/com.wajahatkarim3.RoomExplorer/_latestVersion) [![API](https://img.shields.io/badge/API-15%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=15) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/wajahatkarim3) [![](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat)](https://www.paypal.me/WajahatKarim/5)
 
 <div>
   <sub>Built with ❤︎ by
