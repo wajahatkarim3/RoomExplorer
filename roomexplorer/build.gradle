@@ -1,32 +1,6 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
-
-ext {
-
-    bintrayRepo = "RoomExplorer"
-    bintrayName = "com.wajahatkarim3.RoomExplorer"
-
-    publishedGroupId = 'com.wajahatkarim3'
-    libraryName = 'roomexplorer'
-    artifact = 'roomexplorer'
-
-    libraryDescription = 'A quick and easy in-app database viewer and manager library for your Room databases.'
-
-    siteUrl = 'https://github.com/wajahatkarim3/RoomExplorer'
-    gitUrl = 'https://github.com/wajahatkarim3/RoomExplorer.git'
-
-    libraryVersion = '0.0.2'
-
-    developerId = 'wajahatkarim3'
-    developerName = 'Wajahat Karim'
-    developerEmail = 'wajahatkarim3@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
 }
 
 android {
@@ -51,18 +25,26 @@ android {
        }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+        useIR = true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "androidx.room:room-runtime:$room_version"
 }
-
-//Add these lines to publish library to bintray. This is the readymade scripts made to make uploading to bintray easy.
-//Place it at the end of the file
-if (project.rootProject.file('local.properties').exists()) {
-    apply from: 'https://raw.githubusercontent.com/wajahatkarim3/JCenter-Gradle-Scripts/master/install.gradle'
-    apply from: 'https://raw.githubusercontent.com/wajahatkarim3/JCenter-Gradle-Scripts/master/bintray.gradle'
-}
+apply plugin: 'com.vanniktech.maven.publish'
